@@ -52,8 +52,4 @@ Bu projenin temel amacı, kitap okumayı seven kullanıcıların kitapları orga
 
 ---
 
-## ⚙️ Kurulum ve Çalıştırma
 
-1. Projeyi klonlayın:
-   ```bash
-   git clone https://github.com/kullaniciAdi/MvcKitapProjesi1.git
