@@ -1,0 +1,30 @@
+﻿@model MvcKitapProjesi1.Models.Yazarlar
+
+@{
+    ViewBag.Title = "Yazar Sil";
+}
+
+<h2>Yazar Sil</h2>
+
+<h3>Bu yazarı silmek istediğinize emin misiniz?</h3>
+<div>
+    <h4>Yazar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Yazar ID</dt>
+        <dd>@Model.YazarID</dd>
+
+        <dt>Yazar Adı</dt>
+        <dd>@Model.AdSoyad</dd>
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-actions no-color">
+            <input type="submit" value="Sil" class="btn btn-danger" /> |
+            @Html.ActionLink("İptal", "Index", null, new { @class = "btn btn-default" })
+        </div>
+    }
+</div>
+

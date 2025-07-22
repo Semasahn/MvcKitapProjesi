@@ -1,0 +1,91 @@
+﻿@using Microsoft.AspNet.Identity
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - Kitap Uygulaması</title>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Bootstrap ve site css -->
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+
+    <!-- ✅ DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            @Html.ActionLink("Kitap Uygulaması", "Index", "Kitaplar", null, new { @class = "navbar-brand" })
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item">@Html.ActionLink("Ana Sayfa", "Index", "Home", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Hakkında", "About", "Home", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("İletişim", "Contact", "Home", null, new { @class = "nav-link" })</li>
+
+                    @if (Request.IsAuthenticated)
+                    {
+                        <li class="nav-item">@Html.ActionLink("Kitaplar", "Index", "Kitaplar", null, new { @class = "nav-link" })</li>
+                        <li class="nav-item">@Html.ActionLink("Yazarlar", "Index", "Yazarlar", null, new { @class = "nav-link" })</li>
+                    }
+                </ul>
+
+                <ul class="navbar-nav ms-auto">
+                    @if (Session["KullaniciAdi"] != null)
+                    {
+                        <li class="nav-item">
+                            <span class="navbar-text text-light me-2">Merhaba, @Session["KullaniciAdi"]</span>
+                        </li>
+                        <li class="nav-item">
+                            @using (Html.BeginForm("Logout", "Account", FormMethod.Post, new { @class = "form-inline" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-outline-warning btn-sm">Çıkış Yap</button>
+                            }
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">@Html.ActionLink("Giriş Yap", "Login", "Account", null, new { @class = "nav-link" })</li>
+                        <li class="nav-item">@Html.ActionLink("Kayıt Ol", "Register", "Account", null, new { @class = "nav-link" })</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content mt-3">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Kitap Uygulaması</p>
+        </footer>
+    </div>
+
+    <!-- ✅ Script sıralaması doğru yapıldı -->
+    <!-- jQuery (önce) -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- DataTables -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+
+
+    <!-- Diğer scriptler -->
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <!-- Özel sayfa içi scriptleri burada çağır -->
+    @RenderSection("scripts", required: false)
+
+</html>

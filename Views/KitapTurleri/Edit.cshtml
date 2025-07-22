@@ -1,0 +1,33 @@
+﻿@model MvcKitapProjesi1.Models.KitapTurleri
+
+@{
+    ViewBag.Title = "Kitap Türü Düzenle";
+}
+
+<h2>Kitap Türü Düzenle</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+
+        @Html.HiddenFor(model => model.TurID)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TurAdi, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TurAdi, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TurAdi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Güncelle" class="btn btn-primary" />
+                @Html.ActionLink("Listeye Dön", "Index", null, new { @class = "btn btn-default" })
+            </div>
+        </div>
+    </div>
+}

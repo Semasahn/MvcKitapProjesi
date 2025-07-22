@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3fbd8b59c89b42268e92f5390786aa2c" Name="Diagram1">
+        <EntityTypeShape EntityType="KitapDBModelEntities.BookReviews" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KitapDBModelEntities.Kitaplar" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KitapDBModelEntities.KitapTurleri" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="KitapDBModelEntities.Kullanicilar" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KitapDBModelEntities.sysdiagrams" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="KitapDBModelEntities.Yazarlar" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <AssociationConnector Association="KitapDBModelEntities.FK__BookRevie__Kitap__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="KitapDBModelEntities.FK__BookRevie__Kulla__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="KitapDBModelEntities.FK_BookReviews_Kitaplar" ManuallyRouted="false" />
+        <AssociationConnector Association="KitapDBModelEntities.FK_BookReviews_Kullanicilar" ManuallyRouted="false" />
+        <AssociationConnector Association="KitapDBModelEntities.FK_BookReviews_Kullanicilar1" ManuallyRouted="false" />
+        <AssociationConnector Association="KitapDBModelEntities.FK__Kitaplar__TurID__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="KitapDBModelEntities.FK__Kitaplar__YazarI__3B75D760" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="KitapDBModelEntities.Durumlar" Width="1.5" PointX="5.375" PointY="0.75" />
+        <AssociationConnector Association="KitapDBModelEntities.FK_Kitaplar_Durumlar" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

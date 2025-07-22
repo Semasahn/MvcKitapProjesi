@@ -1,0 +1,62 @@
+﻿@model MvcKitapProjesi1.Models.Kitaplar
+
+@{
+    ViewBag.Title = "Kitap Düzenle";
+    List<SelectListItem> durumlar = new List<SelectListItem>
+{
+        new SelectListItem { Text = "Okundu", Value = "Okundu" },
+        new SelectListItem { Text = "Devam Ediyor", Value = "Devam Ediyor" },
+        new SelectListItem { Text = "Okunmadı", Value = "Okunmadı" }
+    };
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm p-4 bg-light">
+                <h4 class="card-title text-center mb-4">📘 Kitap Bilgilerini Düzenle</h4>
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.HiddenFor(model => model.KitapID)
+
+                    <div class="form-group mb-3">
+                        @Html.LabelFor(model => model.KitapAdi)
+                        @Html.EditorFor(model => model.KitapAdi, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.KitapAdi, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group mb-3">
+                        @Html.Label("Yazar")
+                        @Html.DropDownList("YazarID", (IEnumerable<SelectListItem>)ViewBag.YazarID, "Yazar Seçiniz", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.YazarID, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group mb-3">
+                        @Html.Label("Tür")
+                        @Html.DropDownList("TurID", (IEnumerable<SelectListItem>)ViewBag.TurID, "Tür Seçiniz", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.TurID, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group mb-3">
+                        @Html.LabelFor(model => model.BasimTarihi)
+                        @Html.TextBoxFor(model => model.BasimTarihi, new { @class = "form-control", type = "date" })
+                        @Html.ValidationMessageFor(model => model.BasimTarihi, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group mb-4">
+                        @Html.Label("Durumlar")
+                        @Html.DropDownList("DurumID", (IEnumerable<SelectListItem>)ViewBag.DurumID, "Durum Seçiniz", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.DurumID, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group text-end">
+                        <input type="submit" value="💾 Güncelle" class="btn btn-primary me-2" />
+                        @Html.ActionLink("⬅ Listeye Dön", "Index", null, new { @class = "btn btn-secondary" })
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

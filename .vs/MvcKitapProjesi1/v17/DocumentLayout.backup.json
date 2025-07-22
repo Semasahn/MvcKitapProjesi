@@ -1,0 +1,343 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|c:\\users\\semas\\onedrive\\desktop\\mvckitapprojesi\\mvckitapprojesi1\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\controllers\\kitaplar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:controllers\\kitaplar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\views\\yazarlar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:views\\yazarlar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\views\\kitaplar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:views\\kitaplar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|c:\\users\\semas\\onedrive\\desktop\\mvckitapprojesi\\mvckitapprojesi1\\models\\kullanicilar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:models\\kullanicilar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|c:\\users\\semas\\onedrive\\desktop\\mvckitapprojesi\\mvckitapprojesi1\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|c:\\users\\semas\\onedrive\\desktop\\mvckitapprojesi\\mvckitapprojesi1\\views\\kitaplar\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:views\\kitaplar\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\models\\kitaplar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:models\\kitaplar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\views\\kitaplar\\sadeliste.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:views\\kitaplar\\sadeliste.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\controllers\\yazarlarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:controllers\\yazarlarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\views\\kitaplar\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:views\\kitaplar\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\models\\bookreviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:models\\bookreviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\controllers\\bookreviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D96A585-6987-4BFA-8FBF-6BCAF3A1C114}|MvcKitapProjesi1.csproj|solutionrelative:controllers\\bookreviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 162,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T11:32:06.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Kullanicilar.cs",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Models\\Kullanicilar.cs",
+              "RelativeDocumentMoniker": "Models\\Kullanicilar.cs",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Models\\Kullanicilar.cs",
+              "RelativeToolTip": "Models\\Kullanicilar.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T10:58:53.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T10:54:03.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T06:46:55.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SadeListe.cshtml",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Kitaplar\\SadeListe.cshtml",
+              "RelativeDocumentMoniker": "Views\\Kitaplar\\SadeListe.cshtml",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Kitaplar\\SadeListe.cshtml",
+              "RelativeToolTip": "Views\\Kitaplar\\SadeListe.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T06:47:38.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Yazarlar\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Yazarlar\\Index.cshtml",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Yazarlar\\Index.cshtml",
+              "RelativeToolTip": "Views\\Yazarlar\\Index.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAywC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T06:40:55.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "Models\\Model1.edmx",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-07-18T06:22:42.795Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Kitaplar.cs",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Models\\Kitaplar.cs",
+              "RelativeDocumentMoniker": "Models\\Kitaplar.cs",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Models\\Kitaplar.cs",
+              "RelativeToolTip": "Models\\Kitaplar.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAywCcAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T06:01:43.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "YazarlarController.cs",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Controllers\\YazarlarController.cs",
+              "RelativeDocumentMoniker": "Controllers\\YazarlarController.cs",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Controllers\\YazarlarController.cs",
+              "RelativeToolTip": "Controllers\\YazarlarController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAUwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T14:08:50.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Kitaplar\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Kitaplar\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Kitaplar\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Kitaplar\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-17T13:56:18.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BookReviews.cs",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Models\\BookReviews.cs",
+              "RelativeDocumentMoniker": "Models\\BookReviews.cs",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Models\\BookReviews.cs",
+              "RelativeToolTip": "Models\\BookReviews.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T13:44:10.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BookReviewsController.cs",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Controllers\\BookReviewsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookReviewsController.cs",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Controllers\\BookReviewsController.cs",
+              "RelativeToolTip": "Controllers\\BookReviewsController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T13:39:35.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Kitaplar\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Kitaplar\\Details.cshtml",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Kitaplar\\Details.cshtml",
+              "RelativeToolTip": "Views\\Kitaplar\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-17T13:36:03.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-17T13:31:12.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAABQAAAAAAAAAAAAqwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-17T13:30:50.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T13:29:04.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Kitaplar.cs",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Controllers\\Kitaplar.cs",
+              "RelativeDocumentMoniker": "Controllers\\Kitaplar.cs",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Controllers\\Kitaplar.cs",
+              "RelativeToolTip": "Controllers\\Kitaplar.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAIgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T13:21:59.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Kitaplar\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Kitaplar\\Index.cshtml",
+              "ToolTip": "C:\\Users\\semas\\OneDrive\\Desktop\\MvcKitapProjesi\\MvcKitapProjesi1\\Views\\Kitaplar\\Index.cshtml",
+              "RelativeToolTip": "Views\\Kitaplar\\Index.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAywDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-17T08:11:54.641Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1177,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

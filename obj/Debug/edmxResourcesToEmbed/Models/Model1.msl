@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KitapDBModelEntitiesStoreContainer" CdmEntityContainer="KitapDBModel">
+    <EntitySetMapping Name="BookReviews">
+      <EntityTypeMapping TypeName="KitapDBModelEntities.BookReviews">
+        <MappingFragment StoreEntitySet="BookReviews">
+          <ScalarProperty Name="KitapID" ColumnName="KitapID" />
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="Puan" ColumnName="Puan" />
+          <ScalarProperty Name="Yorum" ColumnName="Yorum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kitaplar">
+      <EntityTypeMapping TypeName="KitapDBModelEntities.Kitaplar">
+        <MappingFragment StoreEntitySet="Kitaplar">
+          <ScalarProperty Name="DurumID" ColumnName="DurumID" />
+          <ScalarProperty Name="KitapID" ColumnName="KitapID" />
+          <ScalarProperty Name="KitapAdi" ColumnName="KitapAdi" />
+          <ScalarProperty Name="BasimTarihi" ColumnName="BasimTarihi" />
+          <ScalarProperty Name="YazarID" ColumnName="YazarID" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KitapTurleri">
+      <EntityTypeMapping TypeName="KitapDBModelEntities.KitapTurleri">
+        <MappingFragment StoreEntitySet="KitapTurleri">
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="TurAdi" ColumnName="TurAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kullanicilar">
+      <EntityTypeMapping TypeName="KitapDBModelEntities.Kullanicilar">
+        <MappingFragment StoreEntitySet="Kullanicilar">
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="KitapDBModelEntities.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yazarlar">
+      <EntityTypeMapping TypeName="KitapDBModelEntities.Yazarlar">
+        <MappingFragment StoreEntitySet="Yazarlar">
+          <ScalarProperty Name="YazarID" ColumnName="YazarID" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Durumlar">
+      <EntityTypeMapping TypeName="KitapDBModelEntities.Durumlar">
+        <MappingFragment StoreEntitySet="Durumlar">
+          <ScalarProperty Name="DurumAdi" ColumnName="DurumAdi" />
+          <ScalarProperty Name="DurumID" ColumnName="DurumID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

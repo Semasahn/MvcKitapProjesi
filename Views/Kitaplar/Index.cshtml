@@ -1,0 +1,60 @@
+﻿@model IEnumerable<MvcKitapProjesi1.Models.Kitaplar>
+@using Microsoft.AspNet.Identity
+
+@{
+    ViewBag.Title = "Kitap Listesi";
+}
+
+<!-- Geniş başlık alanı -->
+<div class="jumbotron text-center bg-light p-4 mb-4 rounded">
+    <h1 class="display-5">📚 Kitap Listesi</h1>
+    <p class="lead">Kitapları görüntüle, düzenle veya yorum yap. Kütüphaneni sen yönet!</p>
+    <a href="@Url.Action("Create", "Kitaplar")" class="btn btn-warning">
+        ➕ Yeni Kitap Ekle
+    </a>
+</div>
+
+<!-- Kitap Tablosu -->
+<table id="kitapTablosu" class="table table-bordered table-hover table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Kitap Adı</th>
+            <th>Yazar</th>
+            <th>Tür</th>
+            <th>Basım Tarihi</th>
+            <th>Durum</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.KitapAdi</td>
+                <td>@(item.Yazarlar?.AdSoyad ?? "Yazar Yok")</td>
+                <td>@(item.KitapTurleri?.TurAdi ?? "Tür Yok")</td>
+                <td>@(item.BasimTarihi?.ToShortDateString() ?? "-")</td>
+                <td>@(item.Durumlar?.DurumAdi ?? "Durum Yok")</td>
+                <td>
+                    <div class="d-flex flex-wrap gap-1 align-items-center">
+                        @Html.ActionLink("Düzenle", "Edit", new { id = item.KitapID }, new { @class = "btn btn-primary btn-sm" })
+                        @Html.ActionLink("Sil", "Delete", new { id = item.KitapID }, new { @class = "btn btn-danger btn-sm" })
+                        @Html.ActionLink("Detay", "Details", new { id = item.KitapID }, new { @class = "btn btn-secondary btn-sm" })
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('#kitapTablosu').DataTable({
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.13.6/i18n/tr.json'
+                }
+            });
+        });
+    </script>
+}

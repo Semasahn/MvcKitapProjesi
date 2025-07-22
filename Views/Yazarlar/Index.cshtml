@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MvcKitapProjesi1.Models.Yazarlar>
+
+@{
+    ViewBag.Title = "Yazar Listesi";
+}
+
+<h2>Yazar Listesi</h2>
+
+<p>
+    @Html.ActionLink("Yeni Yazar Ekle", "Create", null, new { @class = "btn btn-success" })
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Yazar ID</th>
+            <th>Yazar Adı</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.YazarID</td>
+                <td>@item.AdSoyad</td>
+                <td>
+                    @Html.ActionLink("Düzenle", "Edit", new { id = item.YazarID }, new { @class = "btn btn-primary btn-sm" }) |
+                    @Html.ActionLink("Sil", "Delete", new { id = item.YazarID }, new { @class = "btn btn-danger btn-sm" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('#kitapTablosu').DataTable({
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.13.6/i18n/tr.json'
+                }
+            });
+        });
+    </script>
+}

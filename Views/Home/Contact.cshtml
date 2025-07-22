@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "İletişim";
+}
+
+<div class="container mt-5">
+    <h2>📨 Bizimle İletişime Geç</h2>
+    <p class="lead">Önerilerinizi, isteklerinizi veya yaşadığınız sorunları bize bildirin.</p>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Ad Soyad</label>
+                    <input type="text" class="form-control" id="name" placeholder="Adınızı girin">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email adresiniz</label>
+                    <input type="email" class="form-control" id="email" placeholder="ornek@mail.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mesajınız</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Mesajınızı yazın..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Gönder</button>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <h4>📌 İletişim Bilgileri</h4>
+            <ul class="list-unstyled">
+                <li><strong>Email:</strong> destek@kitapuygulamasi.com</li>
+                <li><strong>Telefon:</strong> 0555 555 55 55</li>
+                <li><strong>Adres:</strong> İstanbul / Türkiye</li>
+            </ul>
+
+            <h4 class="mt-4">🌐 Sosyal Medya</h4>
+            <ul class="list-inline">
+                <li class="list-inline-item">📘 Facebook</li>
+                <li class="list-inline-item">🐦 Twitter</li>
+                <li class="list-inline-item">📸 Instagram</li>
+            </ul>
+        </div>
+    </div>
+</div>

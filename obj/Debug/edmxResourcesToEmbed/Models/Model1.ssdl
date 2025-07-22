@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KitapDBModelEntities.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BookReviews">
+    <Key>
+      <PropertyRef Name="KitapID" />
+      <PropertyRef Name="KullaniciID" />
+    </Key>
+    <Property Name="KitapID" Type="int" Nullable="false" />
+    <Property Name="KullaniciID" Type="int" Nullable="false" />
+    <Property Name="Puan" Type="int" />
+    <Property Name="Yorum" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Durumlar">
+    <Key>
+      <PropertyRef Name="DurumID" />
+    </Key>
+    <Property Name="DurumID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DurumAdi" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kitaplar">
+    <Key>
+      <PropertyRef Name="KitapID" />
+    </Key>
+    <Property Name="KitapID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KitapAdi" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="BasimTarihi" Type="date" />
+    <Property Name="YazarID" Type="int" />
+    <Property Name="TurID" Type="int" />
+    <Property Name="DurumID" Type="int" />
+  </EntityType>
+  <EntityType Name="KitapTurleri">
+    <Key>
+      <PropertyRef Name="TurID" />
+    </Key>
+    <Property Name="TurID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TurAdi" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kullanicilar">
+    <Key>
+      <PropertyRef Name="KullaniciID" />
+    </Key>
+    <Property Name="KullaniciID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="100" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Sifre" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Yazarlar">
+    <Key>
+      <PropertyRef Name="YazarID" />
+    </Key>
+    <Property Name="YazarID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdSoyad" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__BookRevie__Kitap__45F365D3">
+    <End Role="Kitaplar" Type="Self.Kitaplar" Multiplicity="1" />
+    <End Role="BookReviews" Type="Self.BookReviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kitaplar">
+        <PropertyRef Name="KitapID" />
+      </Principal>
+      <Dependent Role="BookReviews">
+        <PropertyRef Name="KitapID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Kitaplar__TurID__3C69FB99">
+    <End Role="KitapTurleri" Type="Self.KitapTurleri" Multiplicity="0..1" />
+    <End Role="Kitaplar" Type="Self.Kitaplar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KitapTurleri">
+        <PropertyRef Name="TurID" />
+      </Principal>
+      <Dependent Role="Kitaplar">
+        <PropertyRef Name="TurID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Kitaplar__YazarI__3B75D760">
+    <End Role="Yazarlar" Type="Self.Yazarlar" Multiplicity="0..1" />
+    <End Role="Kitaplar" Type="Self.Kitaplar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Yazarlar">
+        <PropertyRef Name="YazarID" />
+      </Principal>
+      <Dependent Role="Kitaplar">
+        <PropertyRef Name="YazarID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookReviews_Kitaplar">
+    <End Role="Kitaplar" Type="Self.Kitaplar" Multiplicity="1" />
+    <End Role="BookReviews" Type="Self.BookReviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kitaplar">
+        <PropertyRef Name="KitapID" />
+      </Principal>
+      <Dependent Role="BookReviews">
+        <PropertyRef Name="KitapID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookReviews_Kitaplar1">
+    <End Role="Kitaplar" Type="Self.Kitaplar" Multiplicity="1" />
+    <End Role="BookReviews" Type="Self.BookReviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kitaplar">
+        <PropertyRef Name="KitapID" />
+      </Principal>
+      <Dependent Role="BookReviews">
+        <PropertyRef Name="KitapID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookReviews_Kullanicilar">
+    <End Role="Kullanicilar" Type="Self.Kullanicilar" Multiplicity="1" />
+    <End Role="BookReviews" Type="Self.BookReviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kullanicilar">
+        <PropertyRef Name="KullaniciID" />
+      </Principal>
+      <Dependent Role="BookReviews">
+        <PropertyRef Name="KullaniciID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kitaplar_Durumlar">
+    <End Role="Durumlar" Type="Self.Durumlar" Multiplicity="0..1" />
+    <End Role="Kitaplar" Type="Self.Kitaplar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Durumlar">
+        <PropertyRef Name="DurumID" />
+      </Principal>
+      <Dependent Role="Kitaplar">
+        <PropertyRef Name="DurumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kitaplar_KitapTurleri">
+    <End Role="KitapTurleri" Type="Self.KitapTurleri" Multiplicity="0..1" />
+    <End Role="Kitaplar" Type="Self.Kitaplar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KitapTurleri">
+        <PropertyRef Name="TurID" />
+      </Principal>
+      <Dependent Role="Kitaplar">
+        <PropertyRef Name="TurID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kitaplar_Yazarlar">
+    <End Role="Yazarlar" Type="Self.Yazarlar" Multiplicity="0..1" />
+    <End Role="Kitaplar" Type="Self.Kitaplar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Yazarlar">
+        <PropertyRef Name="YazarID" />
+      </Principal>
+      <Dependent Role="Kitaplar">
+        <PropertyRef Name="YazarID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="KitapDBModelEntitiesStoreContainer">
+    <EntitySet Name="BookReviews" EntityType="Self.BookReviews" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Durumlar" EntityType="Self.Durumlar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kitaplar" EntityType="Self.Kitaplar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KitapTurleri" EntityType="Self.KitapTurleri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Yazarlar" EntityType="Self.Yazarlar" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__BookRevie__Kitap__45F365D3" Association="Self.FK__BookRevie__Kitap__45F365D3">
+      <End Role="Kitaplar" EntitySet="Kitaplar" />
+      <End Role="BookReviews" EntitySet="BookReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Kitaplar__TurID__3C69FB99" Association="Self.FK__Kitaplar__TurID__3C69FB99">
+      <End Role="KitapTurleri" EntitySet="KitapTurleri" />
+      <End Role="Kitaplar" EntitySet="Kitaplar" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Kitaplar__YazarI__3B75D760" Association="Self.FK__Kitaplar__YazarI__3B75D760">
+      <End Role="Yazarlar" EntitySet="Yazarlar" />
+      <End Role="Kitaplar" EntitySet="Kitaplar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookReviews_Kitaplar" Association="Self.FK_BookReviews_Kitaplar">
+      <End Role="Kitaplar" EntitySet="Kitaplar" />
+      <End Role="BookReviews" EntitySet="BookReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookReviews_Kitaplar1" Association="Self.FK_BookReviews_Kitaplar1">
+      <End Role="Kitaplar" EntitySet="Kitaplar" />
+      <End Role="BookReviews" EntitySet="BookReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookReviews_Kullanicilar" Association="Self.FK_BookReviews_Kullanicilar">
+      <End Role="Kullanicilar" EntitySet="Kullanicilar" />
+      <End Role="BookReviews" EntitySet="BookReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kitaplar_Durumlar" Association="Self.FK_Kitaplar_Durumlar">
+      <End Role="Durumlar" EntitySet="Durumlar" />
+      <End Role="Kitaplar" EntitySet="Kitaplar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kitaplar_KitapTurleri" Association="Self.FK_Kitaplar_KitapTurleri">
+      <End Role="KitapTurleri" EntitySet="KitapTurleri" />
+      <End Role="Kitaplar" EntitySet="Kitaplar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kitaplar_Yazarlar" Association="Self.FK_Kitaplar_Yazarlar">
+      <End Role="Yazarlar" EntitySet="Yazarlar" />
+      <End Role="Kitaplar" EntitySet="Kitaplar" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

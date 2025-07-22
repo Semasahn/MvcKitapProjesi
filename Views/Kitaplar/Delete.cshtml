@@ -1,0 +1,49 @@
+﻿@model MvcKitapProjesi1.Models.Kitaplar
+
+@{
+    ViewBag.Title = "Kitap Sil";
+}
+
+<div class="container mt-5">
+    <div class="card border-danger shadow">
+        <div class="card-header bg-danger text-white">
+            <h4 class="mb-0">⚠ Kitap Silme Onayı</h4>
+        </div>
+
+        <div class="card-body bg-light">
+            <h5 class="text-danger fw-bold mb-4">Bu kitabı silmek istediğinize emin misiniz?</h5>
+
+            <ul class="list-group mb-4">
+                <li class="list-group-item">
+                    <span class="fw-bold text-danger">📕 Kitap Adı:</span> @Model.KitapAdi
+                </li>
+
+                <li class="list-group-item">
+                    <span class="fw-bold text-primary">👤 Yazar:</span> @(Model.Yazarlar != null ? Model.Yazarlar.AdSoyad : "-")
+                </li>
+
+                <li class="list-group-item">
+                    <span class="fw-bold text-success">📚 Tür:</span> @(Model.KitapTurleri != null ? Model.KitapTurleri.TurAdi : "-")
+                </li>
+
+                <li class="list-group-item">
+                    <span class="fw-bold text-info">📅 Basım Tarihi:</span> @(Model.BasimTarihi.HasValue ? Model.BasimTarihi.Value.ToString("dd.MM.yyyy") : "-")
+                </li>
+
+                <li class="list-group-item">
+                    <span class="fw-bold">💬 Durum:</span> @(Model.Durumlar != null ? Model.Durumlar.DurumAdi : "-")
+                </li>
+            </ul>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="text-end">
+                    <input type="submit" value="🗑 Sil" class="btn btn-danger me-2" />
+                    @Html.ActionLink("❌ İptal Et", "Index", null, new { @class = "btn btn-secondary" })
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,86 @@
+﻿@model MvcKitapProjesi1.Models.Kitaplar
+@using Microsoft.AspNet.Identity
+
+@{
+    ViewBag.Title = "Kitap Detayı";
+}
+
+<h2>@Model.KitapAdi</h2>
+
+<p><strong>Yazar:</strong> @(Model.Yazarlar?.AdSoyad ?? "-") </p>
+<p><strong>Tür:</strong> @(Model.KitapTurleri?.TurAdi ?? "-") </p>
+<p><strong>Durum:</strong> @(Model.Durumlar?.DurumAdi ?? "-")</p>
+<p><strong>Basım Tarihi:</strong> @(Model.BasimTarihi != null ? Model.BasimTarihi.Value.ToShortDateString() : "-")</p>
+
+<hr />
+<h3>Yorumlar</h3>
+
+@if (Model.BookReviews != null && Model.BookReviews.Any())
+{
+    foreach (var yorum in Model.BookReviews)
+    {
+        <div style="border:1px solid #ccc; padding:10px; margin-bottom:10px;">
+            <strong>@(yorum.Kullanicilar?.KullaniciAdi ?? "Anonim")</strong>
+
+            <span>
+                @for (int i = 1; i <= 5; i++)
+                {
+                    if (i <= yorum.Puan)
+                    {
+                        <span style="color: gold; font-size: 20px;">&#9733;</span>
+                    }
+                    else
+                    {
+                        <span style="color: lightgray; font-size: 20px;">&#9734;</span>
+                    }
+                }
+            </span>
+
+            <p>@yorum.Yorum</p>
+        </div>
+    }
+}
+else
+{
+    <p>Henüz yorum yapılmamış.</p>
+}
+
+<hr />
+
+@if (Session["KullaniciID"] != null && Model.Durumlar?.DurumAdi == "Okundu")
+{
+    <h3>Yorum Ekle</h3>
+
+    using (Html.BeginForm("Create", "BookReviews", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        @Html.Hidden("KitapID", Model.KitapID)
+
+        <div class="form-group">
+            <label for="Puan">Yıldız Puanı:</label>
+            <select name="Puan" class="form-control w-25" required>
+                <option value="">Seçiniz</option>
+                <option value="1">★☆☆☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="4">★★★★☆</option>
+                <option value="5">★★★★★</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="Yorum">Yorum:</label>
+            <textarea name="Yorum" class="form-control" rows="3" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-2">Yorumu Gönder</button>
+    }
+}
+else if (Session["KullaniciID"] == null)
+{
+    <p class="text-info">Yorum yapabilmek için <a href="@Url.Action("Login", "Account")">giriş yapınız</a>.</p>
+}
+else
+{
+    <p><em>Yalnızca “Okundu” durumundaki kitaplara yorum ekleyebilirsiniz.</em></p>
+}

@@ -1,0 +1,36 @@
+﻿@model IEnumerable<MvcKitapProjesi1.Models.Kitaplar>
+
+@{
+    ViewBag.Title = "Favori Kitaplarım";
+}
+
+<h2>📚 Favori Kitaplarım</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">Hiç favori kitap eklemediniz.</div>
+}
+else
+{
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Kitap Adı</th>
+                <th>Yazar</th>
+                <th>Tür</th>
+                <th>Basım Tarihi</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var kitap in Model)
+            {
+                <tr>
+                    <td>@kitap.KitapAdi</td>
+                    <td>@kitap.Yazarlar.AdSoyad</td>
+                    <td>@kitap.KitapTurleri.TurAdi</td>
+                    <td>@kitap.BasimTarihi.ToShortDateString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
